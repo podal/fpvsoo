@@ -17,6 +17,15 @@ public class Lab3 {
 	 * @return en lista utan dubletter.
 	 */
 	public static <T> List<T> distinct(List<T> list) {
-		throw new RuntimeException("Inte riktigt färdig.");
+		if (list.isEmpty()) {
+			return list;
+		} else {
+			List<T> returnList = distinct(list.tail());
+			if (Lab1.exists(returnList, list.head())) {
+				return returnList;
+			} else {
+				return returnList.addHead(list.head());
+			}
+		}
 	}
 }

@@ -16,7 +16,10 @@ public class Lab8 {
 	 * @return returnerar listan sorterad
 	 */
 	public static <T extends java.lang.Comparable<T>> List<T> sort(List<T> list) {
-		throw new RuntimeException("Inte riktigt färdig.");
+		if (list.isEmpty()) {
+			return list;
+		}
+		return Lab7.addInOrder(sort(list.tail()), list.head());
 	}
 
 }

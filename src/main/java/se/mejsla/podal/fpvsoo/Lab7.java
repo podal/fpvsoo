@@ -17,7 +17,13 @@ public class Lab7 {
 	 * @return returnerar en ny lista med add object in skutet på sin plats
 	 */
 	public static <T extends java.lang.Comparable<T>> List<T> addInOrder(List<T> list, T add) {
-		throw new RuntimeException("Inte riktigt färdig.");
+		if(list.isEmpty()) {
+			return list.addTail(add);
+		} if(list.head().compareTo(add) <= 0) {
+			return addInOrder(list.tail(),add).addHead(list.head());
+		} else {
+			return list.addHead(add);
+		}
 	}
 
 }

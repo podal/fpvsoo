@@ -1,16 +1,16 @@
 package se.mejsla.podal.fpvsoo.testtemplate;
 
-import static se.mejsla.podal.fpvsoo.util.Lists.*;
-import se.mejsla.podal.fpvsoo.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static se.mejsla.podal.fpvsoo.util.Lists.list;
 
 import org.junit.Test;
 
 import se.mejsla.podal.fpvsoo.Equals;
 import se.mejsla.podal.fpvsoo.Lab1;
 import se.mejsla.podal.fpvsoo.Lab4;
+import se.mejsla.podal.fpvsoo.util.List;
 
 public class Lab4Test {
 

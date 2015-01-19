@@ -21,6 +21,12 @@ public class Lab6 {
 	}
 
 	private static <T extends java.lang.Comparable<T>> boolean _inOrder(List<T> list, T before) {
-		throw new RuntimeException("Inte riktigt färdig.");
+		if (list.isEmpty()) {
+			return true;
+		} else if (before.compareTo(list.head()) > 0) {
+			return false;
+		} else {
+			return _inOrder(list.tail(), list.head());
+		}
 	}
 }

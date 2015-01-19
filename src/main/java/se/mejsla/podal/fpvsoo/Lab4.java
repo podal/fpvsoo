@@ -24,7 +24,16 @@ public class Lab4 {
 	}
 
 	public static <T> List<T> replaceOrAdd(List<T> list, Equals<T> equals, T replace, boolean found) {
-		throw new RuntimeException("Inte riktigt färdig.");
+		if (list.isEmpty() && found) {
+			return list;
+		} else if (list.isEmpty()) {
+			return list.addHead(replace);
+		}
+		if (equals.isEqual(list.head(), replace)) {
+			return replaceOrAdd(list.tail(), equals, replace, true).addHead(replace);
+		} else {
+			return replaceOrAdd(list.tail(), equals, replace, found).addHead(list.head());
+		}
 	}
 
 }

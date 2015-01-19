@@ -20,7 +20,13 @@ public class Lab5 {
 	 * @return
 	 */
 	public static <T> List<T> remove(List<T> list, T delete) {
-		throw new RuntimeException("Inte riktigt färdig.");
+		if (list.isEmpty()) {
+			return list;
+		} else if (list.head().equals(delete)) {
+			return remove(list.tail(), delete);
+		} else {
+			return remove(list.tail(), delete).addHead(list.head());
+		}
 	}
 
 }
