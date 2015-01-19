@@ -1,1 +1,1 @@
-#Små kator för att testa och gämföra FP med OO
+#Små kator för att testa och jämföra FP med OO
