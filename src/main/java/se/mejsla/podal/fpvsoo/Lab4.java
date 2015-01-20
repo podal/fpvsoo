@@ -20,10 +20,6 @@ public class Lab4 {
 	 * @return
 	 */
 	public static <T> List<T> replaceOrAdd(List<T> list, Equals<T> equals, T replace) {
-		return replaceOrAdd(list, equals, replace, false);
-	}
-
-	public static <T> List<T> replaceOrAdd(List<T> list, Equals<T> equals, T replace, boolean found) {
 		throw new RuntimeException("Inte riktigt färdig.");
 	}
 
