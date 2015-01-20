@@ -1,8 +1,10 @@
 package se.mejsla.podal.fpvsoo.util;
 
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
- * Är en implementation av List av typen länkad lista. 
+ * Är en implementation av List av typen länkad lista.
  */
 public class LinkedList<T> implements List<T> {
 	private T head = null;
@@ -46,7 +48,7 @@ public class LinkedList<T> implements List<T> {
 		if (list.isEmpty()) {
 			return list.addHead(tail);
 		} else {
-			return _addTail(list.tail(),tail).addHead(list.head());
+			return _addTail(list.tail(), tail).addHead(list.head());
 		}
 	}
 
@@ -95,4 +97,39 @@ public class LinkedList<T> implements List<T> {
 		} else
 			return head + head().toString() + beetween + tail().mkString("", beetween, tail);
 	}
+
+	@Override
+	public Iterator<T> iterator() {
+		return new LinkedListIterator<T>(this);
+	}
+}
+
+class LinkedListIterator<T> implements Iterator<T> {
+
+	private LinkedList<T> linkedList;
+
+	LinkedListIterator(LinkedList<T> linkedList) {
+		this.linkedList = linkedList;
+	}
+
+	@Override
+	public boolean hasNext() {
+		return !linkedList.isEmpty();
+	}
+
+	@Override
+	public T next() {
+		if (linkedList.isEmpty()) {
+			throw new NoSuchElementException();
+		}
+		T t = linkedList.head();
+		linkedList = linkedList.tail();
+		return t;
+	}
+
+	@Override
+	public void remove() {
+		throw new UnsupportedOperationException();
+	}
+
 }
