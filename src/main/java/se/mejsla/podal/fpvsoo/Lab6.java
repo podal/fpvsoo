@@ -17,10 +17,7 @@ public class Lab6 {
 	 * @return returnerar true ifall listan är sorterad
 	 */
 	public static <T extends java.lang.Comparable<T>> boolean inOrder(List<T> list) {
-		return _inOrder(list.tail(), list.head());
-	}
-
-	private static <T extends java.lang.Comparable<T>> boolean _inOrder(List<T> list, T before) {
 		throw new RuntimeException("Inte riktigt färdig.");
 	}
+
 }
