@@ -17,7 +17,13 @@ public class Lab6 {
 	 * @return returnerar true ifall listan är sorterad
 	 */
 	public static <T extends java.lang.Comparable<T>> boolean inOrder(List<T> list) {
-		throw new RuntimeException("Inte riktigt färdig.");
+		T before = null;
+		for (T t : list) {
+			if (before != null && t.compareTo(before)<0) {
+				return false;
+			}
+			before = t;
+		}
+		return true;
 	}
-
 }

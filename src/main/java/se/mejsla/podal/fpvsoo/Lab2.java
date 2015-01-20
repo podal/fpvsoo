@@ -1,6 +1,7 @@
 package se.mejsla.podal.fpvsoo;
 
 import se.mejsla.podal.fpvsoo.util.List;
+import static se.mejsla.podal.fpvsoo.util.ListUtil.Lists;
 
 /**
  * Bra util klass för att göra operationer på en lista.
@@ -21,6 +22,14 @@ public class Lab2 {
 	 * @return en ny lista där objecten är utbytta
 	 */
 	public static <T> List<T> replace(List<T> list, T find, T replace) {
-		throw new RuntimeException("Inte riktigt färdig.");
+		List<T> newList = Lists.emptyList();
+		for(T t:list) {
+			if(t.equals(find)) {
+				newList = newList.addTail(replace);
+			} else {
+				newList = newList.addTail(t);				
+			}
+		}
+		return newList;
 	}
 }

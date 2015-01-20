@@ -19,6 +19,11 @@ public class Lab1 {
 	 * @return returnerar sant ifall objectet t finns i listan
 	 */
 	public static <T> boolean exists(List<T> list, T t) {
-		throw new RuntimeException("Inte riktigt färdig.");
+		for (T t1 : list) {
+			if (t1.equals(t)) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

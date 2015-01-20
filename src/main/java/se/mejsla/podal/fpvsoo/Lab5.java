@@ -1,6 +1,7 @@
 package se.mejsla.podal.fpvsoo;
 
 import se.mejsla.podal.fpvsoo.util.List;
+import static se.mejsla.podal.fpvsoo.util.ListUtil.Lists;
 
 /**
  * Bra util klass för att göra operationer på en lista.
@@ -12,12 +13,20 @@ public class Lab5 {
 	/**
 	 * Här tar vi bort ifall objectet finns i listan.
 	 * 
-	 * @param list lista att ta bort ifrån
-	 * @param delete object att ta bort
+	 * @param list
+	 *            lista att ta bort ifrån
+	 * @param delete
+	 *            object att ta bort
 	 * @return returnera en ny lista med objectet borttaget ifall det finns.
 	 */
 	public static <T> List<T> remove(List<T> list, T delete) {
-		throw new RuntimeException("Inte riktigt färdig.");		
+		List<T> newList = Lists.emptyList();
+		for (T t : list) {
+			if (!t.equals(delete)) {
+				newList = newList.addTail(t);
+			}
+		}
+		return newList;
 	}
 
 }
