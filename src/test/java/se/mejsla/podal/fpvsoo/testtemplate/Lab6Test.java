@@ -2,7 +2,7 @@ package se.mejsla.podal.fpvsoo.testtemplate;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static se.mejsla.podal.fpvsoo.util.Lists.list;
+import static se.mejsla.podal.fpvsoo.util.ListUtil.Lists;
 
 import org.junit.Test;
 
@@ -12,17 +12,17 @@ public class Lab6Test {
 
 	@Test
 	public void addInOrder_order() {
-		assertTrue(Lab6.inOrder(list(1, 2, 3, 4, 5)));
+		assertTrue(Lab6.inOrder(Lists.list(1, 2, 3, 4, 5)));
 	}
 
 	@Test
 	public void addInOrder_unorder() {
-		assertFalse(Lab6.inOrder(list(3, 2, 3, 4, 5)));
+		assertFalse(Lab6.inOrder(Lists.list(3, 2, 3, 4, 5)));
 	}
 
 	@Test
 	public void addInOrder_duplicated() {
-		assertTrue(Lab6.inOrder(list(1, 1, 2, 2, 4, 4, 5, 5)));
+		assertTrue(Lab6.inOrder(Lists.list(1, 1, 2, 2, 4, 4, 5, 5)));
 	}
 
 }
