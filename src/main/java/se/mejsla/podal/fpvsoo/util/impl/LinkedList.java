@@ -1,7 +1,10 @@
-package se.mejsla.podal.fpvsoo.util;
+package se.mejsla.podal.fpvsoo.util.impl;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import se.mejsla.podal.fpvsoo.util.EmptyListException;
+import se.mejsla.podal.fpvsoo.util.List;
 
 /**
  * Är en implementation av List av typen länkad lista.
