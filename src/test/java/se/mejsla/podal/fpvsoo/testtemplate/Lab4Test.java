@@ -1,16 +1,16 @@
 package se.mejsla.podal.fpvsoo.testtemplate;
 
+import static se.mejsla.podal.fpvsoo.util.ListUtil.Lists;
+import se.mejsla.podal.fpvsoo.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static se.mejsla.podal.fpvsoo.util.Lists.list;
 
 import org.junit.Test;
 
 import se.mejsla.podal.fpvsoo.Equals;
 import se.mejsla.podal.fpvsoo.Lab1;
 import se.mejsla.podal.fpvsoo.Lab4;
-import se.mejsla.podal.fpvsoo.util.List;
 
 public class Lab4Test {
 
@@ -53,7 +53,7 @@ public class Lab4Test {
 	private static final Employee MARIE = new Employee("Marie", "VD");
 	private static final Employee MICHAEL = new Employee("Michael", "VD");
 
-	private static final List<Employee> OLD_MEJSLA = list(MARIE, KRISTOFFER, GUSTAF, DANIEL);
+	private static final List<Employee> OLD_MEJSLA = Lists.list(MARIE, KRISTOFFER, GUSTAF, DANIEL);
 
 	@Test
 	public void replaceOrAdd_replace() {

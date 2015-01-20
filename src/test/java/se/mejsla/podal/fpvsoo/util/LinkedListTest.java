@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import se.mejsla.podal.fpvsoo.util.impl.LinkedList;
+
 public class LinkedListTest {
 
 	@Test
