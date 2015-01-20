@@ -7,7 +7,7 @@ package se.mejsla.podal.fpvsoo.util;
  * @param <T>
  *            innehållet i listan
  */
-public interface List<T> {
+public interface List<T> extends Iterable<T>{
 	/**
 	 * Här får du första elemntet i listan.
 	 * 
