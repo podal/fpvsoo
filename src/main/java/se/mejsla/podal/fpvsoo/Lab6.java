@@ -11,7 +11,7 @@ public class Lab6 {
 
 	/**
 	 * Kollar ifall en lista är i ordning.
-	 * 
+	 *
 	 * @param list
 	 *            en sorterad lista
 	 * @return returnerar true ifall listan är sorterad
@@ -29,4 +29,5 @@ public class Lab6 {
 			return _inOrder(list.tail(), list.head());
 		}
 	}
+
 }

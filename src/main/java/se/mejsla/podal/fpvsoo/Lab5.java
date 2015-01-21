@@ -10,14 +10,11 @@ public class Lab5 {
 	}
 
 	/**
-	 * Returnerar en lista med all objekt som är samma enligt
-	 * <code>Equals</code> utbytta till <code>replace</code>. Ifall inte
-	 * objektet finns så läggs det till i listan.
-	 * 
-	 * @param list
-	 * @param equals
-	 * @param t
-	 * @return
+	 * Här tar vi bort ifall objectet finns i listan.
+	 *
+	 * @param list lista att ta bort ifrån
+	 * @param delete object att ta bort
+	 * @return returnera en ny lista med objectet borttaget ifall det finns.
 	 */
 	public static <T> List<T> remove(List<T> list, T delete) {
 		if (list.isEmpty()) {

@@ -13,7 +13,7 @@ public class Lab4 {
 	 * Returnerar en lista med all objekt som är samma enligt
 	 * <code>Equals</code> utbytta till <code>replace</code>. Ifall inte
 	 * objektet finns så läggs det till i listan.
-	 * 
+	 *
 	 * @param list
 	 * @param equals
 	 * @param t
