@@ -1,0 +1,18 @@
+Imperativ vs Rekursiv
+
+Kristen Nygaard
+ professor i informatik vid Universitetet i Oslo
+ Skapare av Simula tillsammans med  Ole-Johan Dahl 
+
+ Turingpriset 2001
+ John von Neumann-medaljen 2002
+
+John McCarthy
+ Professor på Stanford
+ Skapare av List, mannen som uppfann parantes.
+
+ Turingpriset 1971
+ Kyotopriset 1988
+
+
+
